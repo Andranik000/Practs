@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="calc.css">
+	<title>Найди клад!</title>
+	<script src="FInd The Treasure!.js"></script>
+</head>
+
+<body>
+	<div id="nav">
+		<div class="menu-item">
+		videocard
+			<div class="submenu">
+				
+		</div></div>
+
+		<div class="menu-item">
+		processor
+			<div class="submenu">
+				
+			</div></div>
+
+		<div class="menu-item">
+		RAM
+			<div class="submenu">
+				
+			</div></div>
+
+		<div class="menu-item">
+		motherboard
+			<div class="submenu">
+				
+			</div></div>
+
+		<div class="menu-item">
+		power supply
+			<div class="submenu">
+      </body>
+</html>
+      
+      //JS
+      
+let videocard {
+	"GTX 650" : 150 
+	"GTX 970" : 200
+	"GTX 1050" : 300
+};
+
+let processor {
+	"Intel core i7 3770" : 100
+	"Intel core i7 8700" : 200
+	"Intel core i7 9700" : 250
+};
+
+let RAM {
+	"Kingston 4gb" : 30
+	"Kingston 8gb" : 60
+	"Kingston 16gb" : 120
+};
+
+let motherboard {
+	"ASUS X470" : 20
+	"ASUS X480" : 30
+	"ASUS X490" : 40
+};
+
+let power supply {
+	"KCAS" : 450
+	"KCAS" : 500
+	"KCAS" : 650
+
+}
+
+
+
+
+document.getElementsById("nav").onmouseover = function(event) {
+	let target = event.target;
+	if (target.className == "menu-item") {
+		let s = target.getElementByClassName("submenu");
+		closeMenu();
+		s[0].style.display="block";
+	}
+}
+
+
+	document.onmouseover=function (event) {
+		let target = event.target;
+		console.log(event.target);
+		if (target.className!="menu-item" && target.className!="submenu"){
+			closeMenu
+		}
+}
+
+function closeMenu() {
+	let menu = document.getElementsById("nav");
+	let subm=document.getElementByClassName("submenu");
+	for (let i=0; i <subm.length; i++) {
+		subm[i].style.display="none";
+	}
+}
+			</div></div>
+	</div>
+  
+  CSS
+  
+  .menu-item {
+	border: 2px solid black;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+
+}
+
+.menu-item .submenu{
+	height: 40px;
+	width: 100px;
+	background: yellow;
+	position: absolute;
+	cursor: pointer;
+}
+
+
+	
+
